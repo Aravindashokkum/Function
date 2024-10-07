@@ -1,0 +1,50 @@
+[
+    {
+        "S. no": 1,
+        "Name ": "Aravind",
+        "Course ": "Databricks Platform Administration Fundamentals",
+        "Completion status": "Completed"
+    },
+    {
+        "S. no": 2,
+        "Name ": "Aravind",
+        "Course ": "Databricks Platform Architect",
+        "Completion status": "Completed"
+    },
+    {
+        "S. no": 3,
+        "Name ": "Manjunath",
+        "Course ": "Databricks Platform Administration Fundamentals",
+        "Completion status": "In progress"
+    },
+    {
+        "S. no": 4,
+        "Name ": "Manjunath",
+        "Course ": "Databricks Platform Architect",
+        "Completion status": "Completed"
+    },
+    {
+        "S. no": 5,
+        "Name ": "Saravana",
+        "Course ": "Databricks Platform Administration Fundamentals",
+        "Completion status": "In progress"
+    },
+    {
+        "S. no": 6,
+        "Name ": "Saravana",
+        "Course ": "Databricks Platform Architect",
+        "Completion status": "Completed"
+    },
+    {
+        "S. no": 7,
+        "Name ": "Sivabalaji",
+        "Course ": "Databricks Platform Administration Fundamentals",
+        "Completion status": "In progress"
+    },
+    {
+        "S. no": 8,
+        "Name ": "Sivabalaji",
+        "Course ": "Databricks Platform Architect",
+        "Completion status": "Completed"
+    }
+]
