@@ -1,5 +1,6 @@
-pandas
 azure-functions
+pandas
 azure-storage-blob
 requests
-openpyxl
+openpyxl  # Required for reading .xlsx files
+python-dotenv
