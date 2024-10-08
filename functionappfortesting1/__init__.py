@@ -1,3 +1,4 @@
+import azure.functions as func
 import pandas as pd
 import json
 import os
@@ -5,22 +6,22 @@ import base64
 from io import BytesIO
 import requests
 import logging
-import azure.functions as func
 from azure.storage.blob import BlobServiceClient
+from dotenv import load_dotenv
 
-connection_string = os.getenv("AZURE_STORAGE_CONNECTION_STRING")
+load_dotenv()
+
+# Environment variables
+connection_string = "DefaultEndpointsProtocol=https;AccountName=storageappfortesting;AccountKey=g6UkOhk//Fqgg9sx54ja0tbH2i/jlAUgbYOcJAU29fC1aQAIprk9HRryxX9JosM/xUG6Jr9EP+6H+AStgtwIUg==;EndpointSuffix=core.windows.net"
 container_name = "new"
 blob_name = "Databricks-partner-course-status.xlsx"
 
-GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+GITHUB_TOKEN = "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"
 REPO_OWNER = "Aravindashokkum"
 REPO_NAME = "function"
 BRANCH_NAME = "main"
 json_filename = "tfvars.file"
 
-app = func.FunctionApp(http_auth_level=func.AuthLevel.FUNCTION)
-
-@app.route(route="http_trigger")
 def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
 
@@ -72,4 +73,3 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     except Exception as e:
         logging.error(f"Error in processing: {e}")
         return func.HttpResponse(f"An error occurred: {e}", status_code=500)
-
